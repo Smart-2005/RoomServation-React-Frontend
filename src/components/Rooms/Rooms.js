@@ -1,4 +1,4 @@
-import Header from "./Header";
+import Header from "../Header/Header";
 import './Rooms.css'
 import Paper from '@mui/material/Paper';
 import Table from '@mui/material/Table';
@@ -10,7 +10,7 @@ import TableRow from '@mui/material/TableRow';
 import Button from '@mui/material/Button';
 import { useEffect, useState } from "react";
 import axios from "axios";
-import EditRoomForm from "./EditRoomForm";
+import EditRoomForm from "../Edit Room Box/EditRoomForm";
 import { Dialog, DialogActions, DialogContent, DialogTitle } from "@mui/material";
 
 function Rooms() {

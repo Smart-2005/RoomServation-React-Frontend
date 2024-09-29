@@ -1,4 +1,4 @@
-import Header from './Header'
+import Header from '../Header/Header'
 import './MyReservation.css'
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';

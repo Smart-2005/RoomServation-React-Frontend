@@ -1,5 +1,5 @@
 import './SignUp.css'
-import Header from './Header'
+import Header from '../Header/Header'
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';

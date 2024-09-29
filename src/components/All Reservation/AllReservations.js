@@ -1,4 +1,4 @@
-import Header from "./Header";
+import Header from "../Header/Header";
 import './AllReservations.css'
 import Paper from '@mui/material/Paper';
 import Table from '@mui/material/Table';

@@ -1,7 +1,7 @@
 .makeRservation-main{
     padding-bottom: 20px;
     width: 100%;
-    background-image: url('../../public/bedroom-6577523_1280.jpg');
+    background-image: url('../../../public/Images/bedroom-6577523_1280.jpg');
     background-size: cover;
 }
 .makeRes-form-body{
@@ -23,7 +23,7 @@
 
     .makeRservation-main{
         padding-right: 50px;
-        background-image: url('../../public/pexels-pixabay-277572.jpg');
+        background-image: url('../../../public/Images/pexels-pixabay-277572.jpg');
         background-size: cover;
 
     }

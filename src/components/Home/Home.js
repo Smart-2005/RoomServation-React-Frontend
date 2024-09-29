@@ -1,26 +1,9 @@
-import { jwtDecode } from "jwt-decode";
-import Header from "./Header";
+import Header from "../Header/Header";
 import "./Home.css"
 import { useEffect, useState } from "react";
 import axios from "axios";
 
 function Home() {
-
-
-    const getUserRole=()=>{
-        const token = localStorage.getItem('token');
-        console.log(token);
-        
-        if(!token){
-            return null
-        }
-        const decodeToken = jwtDecode(token);
-        const role = decodeToken.userRoles[0];
-        console.log(role);
-        
-        return role;
-    }
-
     const[roomsCount,setRoomsCount] = useState(0);
     const[actualRoomCount,setActualRoomCount] = useState(null);
 
@@ -81,8 +64,6 @@ function Home() {
                 <div className="header">
                     <Header/>
                 </div>
-                {/* <button onClick={getUserRole}>Click Me</button> */}
-                
                 <div className="main-content">
                     <p className="cOne" >The World</p>
                     <p className="cTwo" >Finest Hotel</p>
@@ -92,7 +73,7 @@ function Home() {
                 <div className="details-card">
                         <div className="contents-grid"> 
                             <span>
-                                <img style={{width:'35px',height:'40px',padding:'15px'}} src="bed.png" alt=""></img>
+                                <img style={{width:'35px',height:'40px',padding:'15px'}} src="Images/bed.png" alt=""></img>
                             </span>
                             <div style={{display:'flex',flexDirection:'column'}}>
                                 <span style={{fontSize:'28px'}}> {roomsCount} </span>
@@ -101,7 +82,7 @@ function Home() {
                         </div>
                         <div className="contents-grid">   
                             <span>
-                                <img style={{width:'35px',height:'40px',padding:'15px'}} src="room-key.png" alt="" ></img>
+                                <img style={{width:'35px',height:'40px',padding:'15px'}} src="Images/room-key.png" alt="" ></img>
                             </span>
                             <div style={{display:'flex',flexDirection:'column'}}>
                                 <span style={{fontSize:'28px'}}> {roomTypesCount} </span>
@@ -110,7 +91,7 @@ function Home() {
                         </div>
                         <div className="contents-grid">                        
                         <span>
-                                <img style={{width:'30px',height:'30px',padding:'15px'}} src="feedback.png" alt=""></img>
+                                <img style={{width:'30px',height:'30px',padding:'15px'}} src="Images/feedback.png" alt=""></img>
                             </span>
                             <div style={{display:'flex',flexDirection:'column'}}>
                                 <span style={{fontSize:'28px'}}>3.5K+</span>
