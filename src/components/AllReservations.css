@@ -1,0 +1,14 @@
+.allResercation-main{
+    width: 100%;
+    padding-bottom: 25px;
+    background-image: url('../../public/inner-space-1026451_1920.jpg');
+    background-size:cover;
+}
+
+@media (max-width: 768px) {
+
+    .allResercation-main{
+        background-image: url('../../public/pexels-palumalerba-2607113.jpg');
+    }
+  }
+  
